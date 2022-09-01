@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>WebApp</title>
-   <script src="https://telegram.org/js/telegram-web-app.js"></script> <!--Подключаем скрипт от телеграм-->
+   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
    <style>
       body{
@@ -63,7 +63,7 @@
 <body>
    <div id="usercard"> 
    </div>
-   <a class="link" href="https://github.com/senpay701/webapp">Repo</a> <!--Просто ссылка для проверки-->
+   <a class="link" href="https://github.com/senpay701/webapp">👉 Repo 👈</a> 
    <div id="button-design">
       <button id="btn" class="button2 b-red rot-135" type="submit">Button</button>
    </div>
@@ -74,7 +74,7 @@
 
    tg.expand(); 
 
-   tg.MainButton.setText(`Hi, ${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.last_name}!`); 
+   tg.MainButton.setText(`👋 Hi, ${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.last_name}!`); 
    tg.MainButton.textColor = "#FFF"; 
    tg.MainButton.color = "#bc1a63"; 
 
@@ -96,7 +96,8 @@
    profImg.src = "python-icon.png"
    
    let profName = document.createElement('p'); 
-   profName.innerText = `Your nickname - ${tg.initDataUnsafe.user.first_name}
+   profName.innerText = `🆔 Ваш ID - ${tg.initDataUnsafe.user.id}`;
+   profName.innerText = `👤 Ваше имя - ${tg.initDataUnsafe.user.first_name}
    ${tg.initDataUnsafe.user.last_name}`;
    
    usercard.appendChild(profImg);
