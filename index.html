@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Test Telegram WebApps API</title>
+   <title>WebApp</title>
    <script src="https://telegram.org/js/telegram-web-app.js"></script> <!--Подключаем скрипт от телеграм-->
 
    <style>
@@ -62,14 +62,14 @@
    });
 
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
-      tg.sendData("some string that we need to send"); 
+      tg.sendData("Button"); 
    });
 
 
    let usercard = document.getElementById("usercard"); 
 
    let profName = document.createElement('p'); 
-   profName.innerText = `${tg.initDataUnsafe.user.first_name}
+   profName.innerText = `Ваш никнейм - ${tg.initDataUnsafe.user.first_name}
    ${tg.initDataUnsafe.user.last_name}`;
 
    usercard.appendChild(profName); 
