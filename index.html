@@ -92,14 +92,14 @@
 
    let usercard = document.getElementById("usercard"); 
 
-   let profImg = document.createElement('img'); 
-   profImg.src = `${tg.initDataUnsafe.user.photo_url}`
+   //let profImg = document.createElement('img'); 
+   //profImg.src = `${tg.initDataUnsafe.user.photo_url}`
    
    let profName = document.createElement('p'); 
    profName.innerText = `Your nickname - ${tg.initDataUnsafe.user.first_name}
    ${tg.initDataUnsafe.user.last_name} ${tg.initDataUnsafe.user.photo_url}`;
    
-   profImg.appendChild(profImg);
+   //profImg.appendChild(profImg);
    usercard.appendChild(profName); 
 
 </script>
