@@ -17,8 +17,30 @@
          font-size: 20px;
       }
 
+      button {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 15px 26px;
+        background-color: #0f868c;
+        border: 1px solid #0f868c;
+        text-align: center;
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #f7f3f3;
+        background: #232121;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 7px;
+        margin-bottom: 16px;
+      }
+
       #button-design .b-red,#button-design .b-red:before{background:#ea6e48;background:-moz-linear-gradient(45deg,#ea6e48 0,#bc1a63 100%);background:-webkit-gradient(left bottom,right top,color-stop(0,#ea6e48),color-stop(100%,#bc1a63));background:-webkit-linear-gradient(45deg,#ea6e48 0,#bc1a63 100%);background:-o-linear-gradient(45deg,#ea6e48 0,#bc1a63 100%);background:-ms-linear-gradient(45deg,#ea6e48 0,#bc1a63 100%);background:linear-gradient(45deg,#ea6e48 0,#bc1a63 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea6e48',endColorstr='#bc1a63',GradientType=1)}
+
       #button-design .button2{display:inline-block;margin-bottom: 16px;font-size:16px;padding: 15px 26px;border-radius:5px;transition:all .5s;filter:hue-rotate(0);color:#FFF;text-decoration:none}
+      
       #button-design .rot-135:hover{filter:hue-rotate(135deg)}
 
       #usercard{
@@ -28,7 +50,7 @@
 
       .link{
          color: #FFF;
-         margin-bottom: 5px;
+         margin-bottom: 10px;
       }
    </style>
 </head>
@@ -36,7 +58,6 @@
 <body>
    <div id="usercard"> 
    </div>
-   <p>Version - 0.0.1</p> 
    <a class="link" href="https://github.com/senpay701/webapp">Repo</a> <!--Просто ссылка для проверки-->
    <div id="button-design">
       <button id="btn" class="button2 b-red rot-135" type="submit">Button</button>
