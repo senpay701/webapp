@@ -53,6 +53,11 @@
          margin-bottom: 5px;
       }
 
+      #header{
+         text-align: center;
+         margin-bottom: 5px;
+      }
+
       .link{
          color: #FFF;
          margin-bottom: 15px;
@@ -61,7 +66,7 @@
 </head>
 
 <body>
-   <img src="python-icon.png" alt="" />
+   <div id="header"> 
    <div id="usercard"> 
    </div>
    <a class="link" href="https://github.com/senpay701/webapp">Repo</a> <!--Просто ссылка для проверки-->
@@ -92,6 +97,12 @@
 
 
    let usercard = document.getElementById("usercard"); 
+
+   let profImg = document.createElement('img'); 
+   profImg.src = `${tg.initDataUnsafe.user.photo_url}`
+
+   var src = document.getElementById("header");
+   src.appendChild(profImg);
 
    let profName = document.createElement('p'); 
    profName.innerText = `Your nickname - ${tg.initDataUnsafe.user.first_name}
