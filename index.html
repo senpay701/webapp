@@ -25,8 +25,8 @@
          text-align: center;
       }
 
-      #version{
-         text-align: center;
+      .link{
+         color: #FFF;
       }
    </style>
 </head>
@@ -34,8 +34,10 @@
 <body>
    <div id="usercard"> 
    </div>
+   <p>Version - 0.0.1</p> 
+   <a class="link" href="https://github.com/senpay701/webapp">Repo</a> <!--Просто ссылка для проверки-->
    <div id="button-design">
-      <button id="btn" class="button2 b-red rot-135" type="submit">Кнопка</button>
+      <button id="btn" class="button2 b-red rot-135" type="submit">Button</button>
    </div>
 </body>
 
@@ -44,7 +46,7 @@
 
    tg.expand(); 
 
-   tg.MainButton.setText(`Привет, ${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.last_name}!`); 
+   tg.MainButton.setText(`Hi, ${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.last_name}!`); 
    tg.MainButton.textColor = "#FFF"; 
    tg.MainButton.color = "#bc1a63"; 
 
@@ -66,7 +68,7 @@
    let usercard = document.getElementById("usercard"); 
 
    let profName = document.createElement('p'); 
-   profName.innerText = `Ваш никнейм - ${tg.initDataUnsafe.user.first_name}
+   profName.innerText = `Your nickname - ${tg.initDataUnsafe.user.first_name}
    ${tg.initDataUnsafe.user.last_name}`;
 
    usercard.appendChild(profName); 
