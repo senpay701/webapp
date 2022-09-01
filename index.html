@@ -37,6 +37,11 @@
         margin-bottom: 13px;
       }
 
+      img {
+	    width: 3.5%;
+	    margin-bottom: 5px;
+      }
+
       #button-design .b-red,#button-design .b-red:before{background:#ea6e48;background:-moz-linear-gradient(45deg,#ea6e48 0,#bc1a63 100%);background:-webkit-gradient(left bottom,right top,color-stop(0,#ea6e48),color-stop(100%,#bc1a63));background:-webkit-linear-gradient(45deg,#ea6e48 0,#bc1a63 100%);background:-o-linear-gradient(45deg,#ea6e48 0,#bc1a63 100%);background:-ms-linear-gradient(45deg,#ea6e48 0,#bc1a63 100%);background:linear-gradient(45deg,#ea6e48 0,#bc1a63 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea6e48',endColorstr='#bc1a63',GradientType=1)}
 
       #button-design .button2{display:inline-block;margin-bottom: 16px;font-size:16px;padding: 15px 26px;border-radius:5px;transition:all .5s;filter:hue-rotate(0);color:#FFF;text-decoration:none}
@@ -56,6 +61,7 @@
 </head>
 
 <body>
+   <img src="python-icon.png" alt="" />
    <div id="usercard"> 
    </div>
    <a class="link" href="https://github.com/senpay701/webapp">Repo</a> <!--Просто ссылка для проверки-->
@@ -78,7 +84,6 @@
    btn.addEventListener('click', function(){ 
       if (tg.MainButton.isVisible){ 
          tg.MainButton.hide() 
-         tg.sendData("Button Clicked"); 
       }
       else{ 
          tg.MainButton.show() 
