@@ -24,6 +24,10 @@
       #usercard{
          text-align: center;
       }
+
+      #version{
+         text-align: center;
+      }
    </style>
 </head>
 
@@ -32,6 +36,8 @@
    </div>
    <div id="button-design">
       <button id="btn" class="button2 b-red rot-135" type="submit">Кнопка</button>
+   </div>
+   <div id="version"> 
    </div>
 </body>
 
@@ -67,5 +73,12 @@
    ${tg.initDataUnsafe.user.last_name}`;
 
    usercard.appendChild(profName); 
+
+   let version = document.getElementById("version"); 
+
+   let versionApp = document.createElement('p'); 
+   profName.innerText = `0.0.1`;
+
+   version.appendChild(versionApp); 
 </script>
 </html>
