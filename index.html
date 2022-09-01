@@ -78,15 +78,13 @@
    btn.addEventListener('click', function(){ 
       if (tg.MainButton.isVisible){ 
          tg.MainButton.hide() 
+         tg.sendData("Button Clicked"); 
       }
       else{ 
          tg.MainButton.show() 
       }
    });
 
-   Telegram.WebApp.onEvent('mainButtonClicked', function(){
-      tg.sendData("Button"); 
-   });
 
    let usercard = document.getElementById("usercard"); 
 
